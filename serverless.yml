@@ -1,0 +1,15 @@
+
+service: aws-lambda-starter
+
+app: my-lambda-app
+
+provider:
+  name: aws
+  runtime: python3.6
+
+functions:
+  mean:
+    handler: handler.handler
+
+plugins:
+  - serverless-python-requirements
